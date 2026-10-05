@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstron Cloud</title>
+    <meta name="description" content="Modern cloud deployment landing page served from Amazon S3.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand" aria-label="Capstron Cloud brand">
+                <div class="brand-mark">C</div>
+                <span>Capstron Cloud</span>
+            </div>
+
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#features">Features</a>
+                <a href="#results">Results</a>
+                <a href="#deployments">Deployments</a>
+            </nav>
+
+            <a class="nav-button" href="#results">View status</a>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow">Automated AWS deployment</span>
+                    <h1>Fast, beautiful cloud hosting for your next static website.</h1>
+                    <p>
+                        Built with Python, boto3, and a modern design that makes your content look premium
+                        from the moment it goes live on Amazon S3.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="primary" onclick="showMessage()">Launch demo</button>
+                        <a class="secondary" href="#results">See results</a>
+                    </div>
+
+                    <ul class="mini-stats" aria-label="Performance statistics">
+                        <li><strong>99.9%</strong><span>Reliable</span></li>
+                        <li><strong>24/7</strong><span>Global access</span></li>
+                        <li><strong>Zero</strong><span>Server setup</span></li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-label="Deployment preview">
+                    <div class="showcase-card">
+                        <img src="images/hero-illustration.svg" alt="Modern cloud deployment illustration">
+                        <div class="status-pill">
+                            <span class="status-dot"></span>
+                            Live on S3
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features" id="features">
+                <div class="section-heading">
+                    <span class="eyebrow">Why it stands out</span>
+                    <h2>Everything you need for a clean deployment experience.</h2>
+                </div>
+
+                <div class="card-grid">
+                    <article class="feature-card">
+                        <div class="icon">⚡</div>
+                        <h3>Lightning fast</h3>
+                        <p>Static files are served directly from S3 for extremely quick page loads.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="icon">🔐</div>
+                        <h3>Secure hosting</h3>
+                        <p>Public access is configured carefully with bucket policy and access controls.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="icon">☁️</div>
+                        <h3>Cloud ready</h3>
+                        <p>Perfect for landing pages, portfolios, and documentation that need scalable hosting.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="results" id="results">
+                <div class="result-panel">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">Deployment result</span>
+                            <h2>Website is live and ready</h2>
+                        </div>
+                        <span class="success-badge">Success</span>
+                    </div>
+
+                    <div class="metric-grid">
+                        <div class="metric-box">
+                            <span>Bucket</span>
+                            <strong>automated-static-website-2026-neha</strong>
+                        </div>
+                        <div class="metric-box">
+                            <span>Region</span>
+                            <strong>ap-south-1</strong>
+                        </div>
+                        <div class="metric-box">
+                            <span>Endpoint</span>
+                            <strong>http://bucket.s3-website-ap-south-1.amazonaws.com</strong>
+                        </div>
+                    </div>
+
+                    <div id="message" class="message-box" aria-live="polite">
+                        The site is ready and being served from Amazon S3.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
